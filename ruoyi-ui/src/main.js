@@ -13,7 +13,7 @@ import router from './router'
 import directive from './directive' // directive
 import plugins from './plugins' // plugins
 import { download } from '@/utils/request'
-
+import * as echarts from 'echarts'
 import './assets/icons' // icon
 import './permission' // permission control
 import { getDicts } from "@/api/system/dict/data";
@@ -48,6 +48,7 @@ Vue.prototype.selectDictLabel = selectDictLabel
 Vue.prototype.selectDictLabels = selectDictLabels
 Vue.prototype.download = download
 Vue.prototype.handleTree = handleTree
+Vue.prototype.$echarts = echarts
 
 // 全局组件挂载
 Vue.component('DictTag', DictTag)
